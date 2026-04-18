@@ -37,7 +37,7 @@ def lf_general_low_risk(record: object) -> int:
     
     if dept == "generalmedicine":
         low_risk_tasks = ["routine follow up", "medication refill", "sleep issue", "minor rash", "mild cough"]
-        if any(task in complaint for kw in low_risk_tasks):
+        if any(task in complaint for task in low_risk_tasks):
             return LOW_RISK
     return ABSTAIN
 

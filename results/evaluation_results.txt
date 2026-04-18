@@ -1,0 +1,13 @@
+=== FINAL TEST SET EVALUATION ===
+Accuracy:  0.8170
+Precision: 0.8710
+Recall:    0.6207
+F1 Score:  0.7248
+Coverage:  93.33%
+
+--- Subgroup Performance (Accuracy) ---
+Dept Cardiology      : 0.8958 (n=48)
+Dept Emergency       : 0.4000 (n=5)
+Dept GeneralMedicine : 0.8992 (n=129)
+Dept Neurology       : 0.3478 (n=23)
+Dept Pulmonology     : 0.7368 (n=19)

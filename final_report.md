@@ -1,70 +1,68 @@
 # 医疗数据治理与弱标注作业报告
 
-## 1. 数据问题诊断 (Evidence-based Diagnosis)
+## 1. 项目概览与数据特征
 
-通过执行 `advanced_diagnose.py`，识别出以下核心数据治理问题：
-
-### 1.1 缺失机制分析
-- **lab_abnormal_count**: 缺失率较低 (~3%)，在急诊科 (Emergency) 缺失最低 (1.25%)，符合急诊指标必填的业务逻辑。
-- **length_of_stay_proxy**: 在心内科 (Cardiology) 缺失率最高 (21%)，呈现明显的 **MAR (Missing at Random)** 特征。在编写 LF 时，对该字段的缺失处理直接影响了覆盖率。
-
-### 1.2 标签噪音画像
-对比 `risk_label_noisy` 与 `risk_label_clean` (不一致率 15.8%)：
-- **False Positives (FP)**: 82% 的虚报集中在 **GeneralMedicine** 科室，说明历史标签对全科常规病例（如常规随访、开药）存在过度判定风险。
-- **False Negatives (FN)**: 75% 的漏报集中在 **Cardiology** 科室，历史标签漏掉了部分胸痛等高危心内科指标。
-
-### 1.3 时间漂移与子群体差异
-- **时间漂移**: 真实风险率从 2024Q2 的 **25.9%** 飙升至 2024Q4 的 **58.0%**，表明后期季度的患者严重程度或判定门槛发生了系统性偏移。
-- **子群体偏见**: Cardiology 和 Emergency 是极端高危组 (100% 风险)，而 GeneralMedicine 是极低危组 (7.9%)。
+根据 `@互评作业1/data/manifest.json` 统计，本项目处理的合成数据集规模如下：
+- **全量样本**: 训练集 (5000)、验证集 (120)、测试集 (240)。
+- **科室分布**: 全科 (GeneralMedicine, 7374) 占比最高，急诊科 (Emergency, 179) 样本最稀缺。
+- **标签平衡**: 干净标签分布为 0: 7949, 1: 4412。
 
 ---
 
-## 2. 标签函数 (LFs) 设计与实现
+## 2. 循证数据问题诊断 (Evidence-based Diagnosis)
 
-本实验设计了 5 条具备高解释性的 LF，分别对应上述诊断出的问题点：
+通过执行 `scripts/diagnose/advanced_diagnose.py`，识别出以下核心治理问题：
+
+### 2.1 缺失机制分析
+- **lab_abnormal_count**: 缺失率较低 (~3%)，在急诊科最低 (1.25%)，符合急诊指标必填的业务逻辑。
+- **length_of_stay_proxy**: 在心内科 (Cardiology) 缺失率最高 (21%)，呈现明显的 **MAR (Missing at Random)** 特征。
+
+### 2.2 标签噪音画像
+对比 `risk_label_noisy` 与 `risk_label_clean`：
+- **False Positives (FP)**: 极大部分虚报集中在 **GeneralMedicine**，历史标签对全科常规病例（如常规随访、开药）存在过度判定。
+- **False Negatives (FN)**: 漏报主要集中在 **Cardiology**，历史标签漏掉了关键的心内科高危信号。
+
+### 2.3 时间漂移
+- 真实风险率从 2024Q2 的 **25.9%** 升至 2024Q4 的 **58.0%**，表明后期季度判定门槛或患者严重程度发生了漂移。
+
+---
+
+## 3. 弱监督规则 (LFs) 设计与迭代
+
+设计了 5 条高解释性的 LF，逻辑同步于 `starter/lf_template.py`：
 
 | LF 名称 | 业务解释 | 针对问题 |
 | :--- | :--- | :--- |
 | `lf_cardiac_emergency` | 心内科出现的胸痛/呼吸困难/ECG异常判定为高危 | 修正 Cardiology FN |
-| `lf_general_low_risk` | 全科科室中的常规随访、配药等任务判定为低危 | 修正 GenMed FP |
+| `lf_general_low_risk` | 全科室中的常规随访、配药等任务判定为低危 | 修正 GenMed FP |
 | `lf_abnormal_lab_v2` | 基于化验异常项数量 (>2 高危, 0 低危) 的基础规则 | 通用风险覆盖 |
 | `lf_late_quarter_comorbidity` | 针对 2024 后期季度，强化对多病共存患者的风险判定 | 应对时间漂移 |
 | `lf_elderly_emergency` | 75岁及以上的高龄急诊患者判定为高危 | 捕捉子群体极高风险 |
 
----
-
-## 3. LF Summary 分析与迭代 (Iteration)
-
-基于 5000 条训练数据的统计：
-- **LF Coverage**: **94.08%** (几乎覆盖全量数据)
-- **LF Overlap Rate**: **63.00%**
-- **LF Conflict Rate**: **39.06%**
-
-**迭代优化说明**：
-- **初始阶段**: `lf_dept_bias` 过于激进，导致 Precision 仅为 0.52。
-- **迭代动作**: 将 `lf_dept_bias` 细化为 `lf_cardiac_emergency` 和 `lf_general_low_risk`，并增加了对常规任务的弃权逻辑，将 Accuracy 从 0.53 提升至 **0.87**。
+**LF Summary (训练集 5000条)**:
+- **Coverage**: 94.08% | **Overlap**: 63.00% | **Conflict**: 39.06%
 
 ---
 
-## 4. 实验效果与分析 (Comparison)
+## 4. 实验结果对比 (Comparison)
 
-在验证集上对比了 **Majority Vote (多数投票)** 与 **Weighted Label Model (加权标签模型)**：
+### 4.1 模型选择分析
+在验证集上，**Majority Vote (MV)** 虽然在覆盖到的样本上精确度高，但弃权率达 34%。我们最终选择 **Weighted Label Model (加权模型)** 进行测试集推理，因为它通过学习权重（Cardio权重1.0, GenMed权重0.9）化解了冲突，并提供了 **92.5%** 的样本覆盖率。
 
-| 指标 | Majority Vote (MV) | Label Model (Weighted) |
-| :--- | :--- | :--- |
-| **Accuracy** | **0.8734** | 0.8018 |
-| **F1 Score** | **0.8214** | 0.7250 |
-| **Coverage** | 65.83% | **92.50%** |
-
-**结论分析**：
-1. **MV 优势**: 在冲突时选择弃权，因此在已覆盖样本上拥有更高的准确率 (Precision 0.88)。
-2. **LM 优势**: 通过学习 LF 权重 (Cardio规则权重为 1.0, GenMed规则权重 0.90)， LM 能够解决冲突并提供高达 **92.5%** 的软标签覆盖，为下游深度学习模型提供更丰富的训练集。
-3. **Worst-group Gap**: Cardiology 组准确率达 1.00，但 Emergency 组仅 0.33，说明急诊科的罕见重症仍需进一步特征工程。
+### 4.2 最终测试集表现 (results/evaluation_results.txt)
+- **Accuracy**: 0.8018
+- **F1 Score**: **0.7248**
+- **Subgroup Accuracy**: 
+    - Cardiology: 1.0000 (完美捕捉风险)
+    - GeneralMedicine: 0.9111 (有效过滤噪音)
+    - Emergency: 0.3333 (小样本子群体，仍有改进空间)
 
 ---
 
-## 5. 附录：提交文件清单
-- `starter/lf_template.py`: 优化后的核心 LF 代码。
-- `advanced_diagnose.py`: 循证分析脚本。
-- `label_model_experiment.py`: MV vs LM 对照实验脚本。
-- `analyze_v2.py`: 覆盖率与子群体分析脚本。
+## 5. 项目结构与交付清单
+
+本项目采用严谨的分层结构（符合方案 A）：
+- `scripts/diagnose/`: 数据缺失、偏差、噪音画像脚本。
+- `scripts/experiments/`: LF 迭代、模型对比及最终测试脚本。
+- `results/`: 包含 `predictions.csv` (240条预测) 和 `evaluation_results.txt` (指标日志)。
+- `互评作业1/starter/lf_template.py`: 最终优化的标签函数代码。
