@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# 临时分析脚本 (可选，如果您想保留可以删除下面这几行)
+advanced_diagnose.py
+analyze_v2.py
+label_model_experiment.py
+evaluate_improved.py
+check_bias.py
+check_mismatch.py
+diagnose_data.py
+evaluate_baseline.py
+evaluate_by_quarter.py

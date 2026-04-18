@@ -1,0 +1,30 @@
+{
+  "source_zip_url": "https://raw.githubusercontent.com/lhs-open/synthetic-data/main/record/synthea-dataset-100.zip",
+  "source_archive_name": "synthea-dataset-100.zip",
+  "source_stats": {
+    "archive_path": "data-mining-course/generated/medical_governance_teacher/synthea-dataset-100.zip",
+    "extract_dir": "data-mining-course/generated/medical_governance_teacher/source/synthea-100",
+    "patients": 140,
+    "encounters": 12361,
+    "conditions": 7708,
+    "medications": 14016,
+    "observations": 100402,
+    "departments": {
+      "GeneralMedicine": 7374,
+      "Neurology": 966,
+      "Pulmonology": 1010,
+      "Cardiology": 2832,
+      "Emergency": 179
+    },
+    "clean_label_balance": {
+      "0": 7949,
+      "1": 4412
+    }
+  },
+  "splits": {
+    "train_unlabeled": 5000,
+    "validation_small": 120,
+    "test_labeled": 240
+  },
+  "seed": 42
+}

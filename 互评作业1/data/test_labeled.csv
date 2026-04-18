@@ -1,0 +1,241 @@
+patient_id,visit_id,age_group,gender,department,admission_type,visit_time_bucket,prior_visit_count,lab_abnormal_count,med_count,comorbidity_count,length_of_stay_proxy,year_quarter,hospital_unit,chief_complaint,triage_note,risk_label_noisy,risk_label_clean,split
+P005120,V005120_01,40-59,F,GeneralMedicine,Emergency,Morning,71,0,0,6,0.5,2024Q4,Unit_A,routine follow up,critical lab alert,0,1,test_labeled
+P005121,V005121_01,75+,F,GeneralMedicine,WalkIn,Morning,810,0,,7,1.0,2024Q3,Unit_A,routine follow up,,0,0,test_labeled
+P005122,V005122_01,75+,F,GeneralMedicine,Referral,Night,1729,0,0,6,0.5,2024Q3,Unit_B,medication refill,,1,1,test_labeled
+P005123,V005123_01,60-74,M,GeneralMedicine,Referral,Morning,40,1,,6,,2024Q1,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005124,V005124_01,18-39,F,Neurology,Referral,Night,14,,2,7,,2024Q1,Unit_B,shortness of breath,abnormal ECG,1,1,test_labeled
+P005125,V005125_01,40-59,M,Neurology,Referral,Afternoon,42,0,1,5,0.5,2024Q2,Unit_A,shortness of breath,,1,1,test_labeled
+P005126,V005126_01,75+,F,GeneralMedicine,WalkIn,Evening,1131,0,,7,0.5,2024Q4,Unit_A,minor rash,critical lab alert,0,0,test_labeled
+P005127,V005127_01,60-74,F,GeneralMedicine,WalkIn,Morning,117,1,2,5,0.5,2024Q3,Unit_A,repeated fainting,repeated visit this month,0,0,test_labeled
+P005128,V005128_01,40-59,F,GeneralMedicine,WalkIn,Evening,59,0,,6,0.5,2024Q1,Unit_A,high fever with confusion,critical lab alert,0,0,test_labeled
+P005129,V005129_01,75+,M,Cardiology,WalkIn,Night,176,,2,6,1.0,2024Q2,Unit_B,shortness of breath,abnormal ECG,1,1,test_labeled
+P005130,V005130_01,75+,F,Cardiology,Referral,Night,96,0,2,5,0.5,2024Q2,Unit_C,shortness of breath,possible stroke signs,1,1,test_labeled
+P005131,V005131_01,40-59,F,GeneralMedicine,WalkIn,Night,12,,1,5,1.0,2024Q1,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005132,V005132_01,40-59,F,GeneralMedicine,WalkIn,Evening,38,0,,6,,2024Q1,Unit_A,medication refill,,0,0,test_labeled
+P005133,V005133_01,60-74,F,Cardiology,Referral,Morning,53,1,0,7,0.5,2024Q4,Unit_B,shortness of breath,possible stroke signs,1,1,test_labeled
+P005134,V005134_01,40-59,F,GeneralMedicine,Referral,Evening,23,1,,7,0.5,2024Q1,Unit_A,medication refill,critical lab alert,0,0,test_labeled
+P005135,V005135_01,75+,F,Cardiology,Referral,Evening,56,1,,5,0.5,2024Q2,Unit_B,high fever with confusion,critical lab alert,1,1,test_labeled
+P005136,V005136_01,40-59,F,GeneralMedicine,Referral,Morning,33,0,2,6,0.5,2024Q3,Unit_A,medication refill,critical lab alert,0,0,test_labeled
+P005137,V005137_01,60-74,F,GeneralMedicine,WalkIn,Night,259,0,2,7,0.5,2024Q3,Unit_B,routine follow up,critical lab alert,1,1,test_labeled
+P005138,V005138_01,40-59,F,Cardiology,WalkIn,Afternoon,48,0,,5,0.5,2024Q4,Unit_A,chest pain,critical lab alert,1,1,test_labeled
+P005139,V005139_01,18-39,F,GeneralMedicine,Referral,Afternoon,10,1,1,5,0.5,2024Q2,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005140,V005140_01,60-74,F,Cardiology,Referral,Evening,103,1,5,7,0.5,2024Q4,Unit_B,repeated fainting,possible stroke signs,1,1,test_labeled
+P005141,V005141_01,60-74,M,Neurology,WalkIn,Afternoon,20,0,0,6,0.5,2024Q2,Unit_B,severe headache,repeated visit this month,0,1,test_labeled
+P005142,V005142_01,18-39,F,Cardiology,Referral,Evening,24,0,2,5,0.5,2024Q4,Unit_A,chest pain,abnormal ECG,1,1,test_labeled
+P005143,V005143_01,18-39,F,GeneralMedicine,WalkIn,Evening,41,0,0,7,0.5,2024Q2,Unit_A,medication refill,critical lab alert,0,0,test_labeled
+P005144,V005144_01,75+,F,GeneralMedicine,WalkIn,Evening,513,1,,5,0.5,2024Q3,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005145,V005145_01,75+,F,GeneralMedicine,WalkIn,Night,1618,,0,6,,2024Q4,Unit_B,repeated fainting,repeated visit this month,1,1,test_labeled
+P005146,V005146_01,40-59,F,GeneralMedicine,WalkIn,Night,160,0,2,6,0.5,2024Q2,Unit_A,shortness of breath,critical lab alert,0,0,test_labeled
+P005147,V005147_01,60-74,M,GeneralMedicine,WalkIn,Afternoon,58,2,0,7,0.5,2024Q4,Unit_A,medication refill,,0,0,test_labeled
+P005148,V005148_01,18-39,F,GeneralMedicine,Referral,Night,13,,3,4,0.5,2024Q2,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005149,V005149_01,40-59,F,GeneralMedicine,Referral,Evening,32,1,3,2,0.5,2024Q4,Unit_A,high fever with confusion,critical lab alert,0,0,test_labeled
+P005150,V005150_01,40-59,M,GeneralMedicine,WalkIn,Evening,17,0,2,6,,2024Q1,Unit_A,medication refill,critical lab alert,0,0,test_labeled
+P005151,V005151_01,75+,F,Pulmonology,WalkIn,Morning,1537,1,1,7,,2024Q2,Unit_B,sleep issue,repeated visit this month,0,0,test_labeled
+P005152,V005152_01,18-39,F,GeneralMedicine,WalkIn,Afternoon,18,0,0,7,1.0,2024Q4,Unit_A,repeated fainting,repeated visit this month,0,0,test_labeled
+P005153,V005153_01,18-39,F,GeneralMedicine,WalkIn,Morning,69,1,0,6,1.0,2024Q4,Unit_A,sleep issue,,1,0,test_labeled
+P005154,V005154_01,75+,F,Pulmonology,Referral,Night,660,0,0,7,,2024Q2,Unit_C,medication refill,repeated visit this month,0,0,test_labeled
+P005155,V005155_01,75+,F,GeneralMedicine,WalkIn,Night,114,1,0,7,,2024Q1,Unit_B,medication refill,critical lab alert,0,0,test_labeled
+P005156,V005156_01,75+,F,GeneralMedicine,WalkIn,Afternoon,1570,0,2,6,0.5,2024Q3,Unit_A,high fever with confusion,repeated visit this month,0,0,test_labeled
+P005157,V005157_01,40-59,M,Pulmonology,Referral,Afternoon,28,2,2,7,0.5,2024Q1,Unit_A,severe headache,repeated visit this month,0,0,test_labeled
+P005158,V005158_01,18-39,M,GeneralMedicine,Referral,Morning,7,0,0,6,1.0,2024Q4,Unit_A,sleep issue,,0,0,test_labeled
+P005159,V005159_01,60-74,F,GeneralMedicine,WalkIn,Evening,105,0,,6,0.5,2024Q2,Unit_A,sleep issue,critical lab alert,1,0,test_labeled
+P005160,V005160_01,18-39,F,Cardiology,Referral,Evening,15,0,3,5,1.0,2024Q2,Unit_A,high fever with confusion,possible stroke signs,1,1,test_labeled
+P005161,V005161_01,18-39,F,GeneralMedicine,Referral,Evening,5,1,0,4,,2024Q3,Unit_A,shortness of breath,critical lab alert,0,0,test_labeled
+P005162,V005162_01,75+,M,GeneralMedicine,WalkIn,Night,175,1,,6,0.5,2024Q1,Unit_B,medication refill,critical lab alert,0,0,test_labeled
+P005163,V005163_01,18-39,F,GeneralMedicine,Referral,Evening,22,1,0,7,0.5,2024Q2,Unit_A,mild cough,repeated visit this month,0,0,test_labeled
+P005164,V005164_01,40-59,F,GeneralMedicine,Referral,Morning,46,0,1,6,,2024Q4,Unit_A,mild cough,critical lab alert,0,0,test_labeled
+P005165,V005165_01,75+,M,Emergency,WalkIn,Evening,102,1,0,6,0.5,2024Q4,Unit_B,repeated fainting,critical lab alert,1,1,test_labeled
+P005166,V005166_01,18-39,F,GeneralMedicine,WalkIn,Evening,5,0,4,3,0.5,2024Q3,Unit_A,medication refill,critical lab alert,0,0,test_labeled
+P005167,V005167_01,18-39,F,Cardiology,WalkIn,Morning,49,1,0,7,0.5,2024Q1,Unit_A,chest pain,possible stroke signs,1,1,test_labeled
+P005168,V005168_01,75+,F,Neurology,Referral,Evening,38,0,2,5,0.5,2024Q4,Unit_B,routine follow up,critical lab alert,1,1,test_labeled
+P005169,V005169_01,40-59,F,GeneralMedicine,Referral,Night,132,0,2,6,0.5,2024Q3,Unit_A,high fever with confusion,repeated visit this month,0,0,test_labeled
+P005170,V005170_01,18-39,F,Neurology,WalkIn,Night,2,0,0,6,0.5,2024Q3,Unit_B,sleep issue,repeated visit this month,1,1,test_labeled
+P005171,V005171_01,40-59,F,Pulmonology,Referral,Evening,35,0,,4,0.5,2024Q3,Unit_A,mild cough,repeated visit this month,0,0,test_labeled
+P005172,V005172_01,75+,F,Neurology,WalkIn,Night,325,2,0,5,0.5,2024Q1,Unit_C,chest pain,repeated visit this month,0,1,test_labeled
+P005173,V005173_01,40-59,F,GeneralMedicine,WalkIn,Afternoon,46,0,0,5,0.5,2024Q1,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005174,V005174_01,75+,F,GeneralMedicine,WalkIn,Night,1058,0,2,6,0.5,2024Q1,Unit_B,high fever with confusion,repeated visit this month,1,0,test_labeled
+P005175,V005175_01,60-74,F,Neurology,Referral,Evening,112,0,0,7,,2024Q3,Unit_B,severe headache,critical lab alert,1,1,test_labeled
+P005176,V005176_01,60-74,M,Neurology,WalkIn,Morning,141,0,1,6,64.5,2024Q4,Unit_B,routine follow up,,1,1,test_labeled
+P005177,V005177_01,60-74,F,GeneralMedicine,WalkIn,Night,75,2,1,5,1.0,2024Q2,Unit_B,routine follow up,repeated visit this month,0,0,test_labeled
+P005178,V005178_01,60-74,F,GeneralMedicine,WalkIn,Night,75,2,2,5,0.5,2024Q2,Unit_B,routine follow up,repeated visit this month,0,0,test_labeled
+P005179,V005179_01,75+,F,Cardiology,WalkIn,Afternoon,1269,0,1,5,0.5,2024Q3,Unit_B,repeated fainting,critical lab alert,1,1,test_labeled
+P005180,V005180_01,60-74,M,Cardiology,Referral,Evening,57,2,0,6,1.0,2024Q2,Unit_B,chest pain,repeated visit this month,1,1,test_labeled
+P005181,V005181_01,18-39,M,Neurology,Referral,Evening,3,1,1,6,,2024Q3,Unit_A,severe headache,possible stroke signs,1,1,test_labeled
+P005182,V005182_01,75+,M,GeneralMedicine,Referral,Night,96,1,2,5,1.0,2024Q4,Unit_B,sleep issue,repeated visit this month,1,1,test_labeled
+P005183,V005183_01,18-39,M,GeneralMedicine,Referral,Afternoon,9,0,3,6,,2024Q4,Unit_A,routine follow up,repeated visit this month,0,0,test_labeled
+P005184,V005184_01,40-59,F,Cardiology,WalkIn,Night,51,2,2,7,0.5,2024Q4,Unit_B,shortness of breath,abnormal ECG,1,1,test_labeled
+P005185,V005185_01,60-74,F,Neurology,WalkIn,Night,199,1,2,6,0.5,2024Q1,Unit_C,severe headache,oxygen level dropped,1,1,test_labeled
+P005186,V005186_01,75+,M,GeneralMedicine,WalkIn,Night,184,0,1,6,,2024Q1,Unit_B,high fever with confusion,critical lab alert,1,0,test_labeled
+P005187,V005187_01,60-74,M,Cardiology,WalkIn,Afternoon,139,0,,5,1.0,2024Q2,Unit_B,chest pain,oxygen level dropped,1,1,test_labeled
+P005188,V005188_01,40-59,M,Cardiology,Referral,Afternoon,47,0,2,6,1.0,2024Q4,Unit_A,chest pain,repeated visit this month,1,1,test_labeled
+P005189,V005189_01,60-74,M,GeneralMedicine,WalkIn,Afternoon,82,1,0,6,,2024Q1,Unit_A,shortness of breath,critical lab alert,1,0,test_labeled
+P005190,V005190_01,18-39,F,Neurology,WalkIn,Night,2,1,0,1,1.0,2024Q1,Unit_B,severe headache,possible stroke signs,0,0,test_labeled
+P005191,V005191_01,40-59,M,GeneralMedicine,Referral,Afternoon,11,0,1,6,,2024Q1,Unit_A,minor rash,repeated visit this month,1,0,test_labeled
+P005192,V005192_01,75+,M,Cardiology,WalkIn,Evening,274,4,,5,0.5,2024Q2,Unit_B,chest pain,abnormal ECG,1,1,test_labeled
+P005193,V005193_01,60-74,F,GeneralMedicine,Referral,Morning,37,0,4,5,0.5,2024Q1,Unit_A,medication refill,critical lab alert,0,0,test_labeled
+P005194,V005194_01,18-39,F,Cardiology,Referral,Evening,10,1,0,3,0.5,2024Q2,Unit_A,severe headache,abnormal ECG,1,1,test_labeled
+P005195,V005195_01,18-39,F,Pulmonology,WalkIn,Morning,10,0,,7,0.5,2024Q3,Unit_A,mild cough,critical lab alert,0,0,test_labeled
+P005196,V005196_01,40-59,F,GeneralMedicine,Emergency,Afternoon,71,1,0,7,0.5,2024Q3,Unit_A,sleep issue,repeated visit this month,1,1,test_labeled
+P005197,V005197_01,60-74,M,Pulmonology,Referral,Afternoon,26,0,1,7,0.5,2024Q4,Unit_B,mild cough,,0,0,test_labeled
+P005198,V005198_01,75+,F,GeneralMedicine,WalkIn,Evening,1365,1,0,6,0.5,2024Q2,Unit_A,minor rash,repeated visit this month,0,0,test_labeled
+P005199,V005199_01,18-39,F,GeneralMedicine,WalkIn,Evening,35,0,0,5,,2024Q3,Unit_A,shortness of breath,repeated visit this month,0,0,test_labeled
+P005200,V005200_01,40-59,M,Cardiology,WalkIn,Evening,36,4,3,5,0.5,2024Q4,Unit_A,shortness of breath,repeated visit this month,1,1,test_labeled
+P005201,V005201_01,75+,F,Cardiology,Referral,Night,46,1,0,5,0.5,2024Q4,Unit_B,shortness of breath,abnormal ECG,1,1,test_labeled
+P005202,V005202_01,18-39,F,Emergency,Referral,Night,2,1,3,0,0.5,2024Q1,Unit_B,minor rash,no acute distress,0,0,test_labeled
+P005203,V005203_01,60-74,M,Pulmonology,Referral,Night,78,0,1,6,,2024Q3,Unit_B,mild cough,critical lab alert,1,1,test_labeled
+P005204,V005204_01,18-39,F,GeneralMedicine,Referral,Afternoon,4,0,1,6,1.0,2024Q3,Unit_A,repeated fainting,critical lab alert,0,0,test_labeled
+P005205,V005205_01,40-59,F,Pulmonology,WalkIn,Evening,878,0,1,7,0.5,2024Q4,Unit_A,mild cough,critical lab alert,0,0,test_labeled
+P005206,V005206_01,75+,F,Neurology,WalkIn,Evening,919,1,0,7,0.5,2024Q2,Unit_B,mild cough,critical lab alert,0,1,test_labeled
+P005207,V005207_01,40-59,M,GeneralMedicine,Referral,Night,16,1,0,6,,2024Q2,Unit_A,shortness of breath,critical lab alert,0,0,test_labeled
+P005208,V005208_01,75+,M,Neurology,Emergency,Morning,76,,1,5,,2024Q3,Unit_B,severe headache,possible stroke signs,1,1,test_labeled
+P005209,V005209_01,75+,M,GeneralMedicine,WalkIn,Morning,415,0,,6,,2024Q2,Unit_A,routine follow up,repeated visit this month,1,0,test_labeled
+P005210,V005210_01,40-59,M,GeneralMedicine,WalkIn,Night,20,0,1,5,,2024Q3,Unit_A,sleep issue,,0,0,test_labeled
+P005211,V005211_01,75+,F,GeneralMedicine,WalkIn,Afternoon,793,0,1,6,0.5,2024Q2,Unit_A,sleep issue,repeated visit this month,1,0,test_labeled
+P005212,V005212_01,60-74,M,GeneralMedicine,Referral,Afternoon,109,1,0,5,1.0,2024Q3,Unit_A,minor rash,repeated visit this month,0,0,test_labeled
+P005213,V005213_01,40-59,F,GeneralMedicine,WalkIn,Afternoon,78,0,0,7,0.5,2024Q4,Unit_A,shortness of breath,,0,0,test_labeled
+P005214,V005214_01,60-74,F,Emergency,WalkIn,Morning,78,0,1,7,1.0,2024Q3,Unit_B,minor rash,repeated visit this month,1,1,test_labeled
+P005215,V005215_01,60-74,F,GeneralMedicine,WalkIn,Evening,35,0,1,6,0.5,2024Q1,Unit_A,routine follow up,repeated visit this month,0,0,test_labeled
+P005216,V005216_01,75+,F,GeneralMedicine,WalkIn,Evening,594,0,2,5,,2024Q1,Unit_A,routine follow up,repeated visit this month,0,0,test_labeled
+P005217,V005217_01,75+,F,GeneralMedicine,WalkIn,Morning,137,1,,6,,2024Q1,Unit_A,chest pain,,0,0,test_labeled
+P005218,V005218_01,40-59,F,GeneralMedicine,WalkIn,Afternoon,84,0,0,5,1.0,2024Q2,Unit_A,minor rash,repeated visit this month,0,0,test_labeled
+P005219,V005219_01,40-59,F,GeneralMedicine,WalkIn,Evening,78,0,0,6,0.5,2024Q3,Unit_A,high fever with confusion,repeated visit this month,0,0,test_labeled
+P005220,V005220_01,75+,F,GeneralMedicine,WalkIn,Afternoon,106,1,1,5,,2024Q1,Unit_A,routine follow up,critical lab alert,1,0,test_labeled
+P005221,V005221_01,40-59,M,Neurology,WalkIn,Afternoon,27,0,0,6,4.0,2024Q4,Unit_A,severe headache,possible stroke signs,1,1,test_labeled
+P005222,V005222_01,40-59,M,GeneralMedicine,WalkIn,Night,22,0,1,7,,2024Q1,Unit_A,mild cough,critical lab alert,0,0,test_labeled
+P005223,V005223_01,60-74,F,GeneralMedicine,Referral,Afternoon,60,0,7,5,0.5,2024Q4,Unit_A,high fever with confusion,critical lab alert,0,0,test_labeled
+P005224,V005224_01,40-59,M,Emergency,WalkIn,Night,68,0,,6,0.5,2024Q1,Unit_B,mild cough,repeated visit this month,1,1,test_labeled
+P005225,V005225_01,60-74,M,Neurology,WalkIn,Night,145,0,2,6,1.0,2024Q4,Unit_C,high fever with confusion,critical lab alert,1,1,test_labeled
+P005226,V005226_01,40-59,M,GeneralMedicine,Referral,Afternoon,54,1,2,6,0.5,2024Q1,Unit_A,sleep issue,repeated visit this month,0,0,test_labeled
+P005227,V005227_01,40-59,F,GeneralMedicine,WalkIn,Morning,9,1,1,6,0.5,2024Q4,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005228,V005228_01,18-39,M,Cardiology,Emergency,Night,16,1,1,3,0.5,2024Q3,Unit_B,chest pain,possible stroke signs,1,1,test_labeled
+P005229,V005229_01,75+,M,Neurology,WalkIn,Evening,450,1,0,7,0.5,2024Q3,Unit_B,severe headache,critical lab alert,1,1,test_labeled
+P005230,V005230_01,40-59,M,GeneralMedicine,Referral,Afternoon,29,0,0,5,0.5,2024Q2,Unit_A,routine follow up,repeated visit this month,0,0,test_labeled
+P005231,V005231_01,60-74,M,GeneralMedicine,WalkIn,Morning,91,0,1,5,1.0,2024Q4,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005232,V005232_01,75+,F,GeneralMedicine,WalkIn,Afternoon,602,0,1,7,0.5,2024Q1,Unit_A,minor rash,repeated visit this month,0,0,test_labeled
+P005233,V005233_01,75+,F,Emergency,Emergency,Night,482,0,0,6,0.5,2024Q2,Unit_C,repeated fainting,critical lab alert,1,1,test_labeled
+P005234,V005234_01,40-59,F,GeneralMedicine,WalkIn,Night,163,1,3,6,0.5,2024Q3,Unit_A,minor rash,critical lab alert,0,0,test_labeled
+P005235,V005235_01,60-74,M,GeneralMedicine,Referral,Afternoon,82,0,0,6,4.2,2024Q4,Unit_A,sleep issue,critical lab alert,0,0,test_labeled
+P005236,V005236_01,60-74,F,Cardiology,WalkIn,Evening,88,2,3,6,0.5,2024Q2,Unit_B,shortness of breath,abnormal ECG,1,1,test_labeled
+P005237,V005237_01,18-39,M,Neurology,Referral,Morning,22,0,4,6,0.5,2024Q2,Unit_A,severe headache,abnormal ECG,0,1,test_labeled
+P005238,V005238_01,18-39,M,Cardiology,Referral,Afternoon,10,1,1,0,,2024Q4,Unit_A,chest pain,possible stroke signs,1,1,test_labeled
+P005239,V005239_01,75+,F,Cardiology,Referral,Night,1441,0,0,6,0.5,2024Q4,Unit_C,chest pain,possible stroke signs,1,1,test_labeled
+P005240,V005240_01,75+,F,GeneralMedicine,WalkIn,Afternoon,69,0,1,5,0.5,2024Q3,Unit_A,high fever with confusion,repeated visit this month,0,0,test_labeled
+P005241,V005241_01,60-74,M,GeneralMedicine,Referral,Evening,47,0,0,7,0.5,2024Q2,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005242,V005242_01,18-39,M,GeneralMedicine,WalkIn,Night,3,0,2,5,0.5,2024Q3,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005243,V005243_01,18-39,F,GeneralMedicine,Referral,Night,12,0,3,4,,2024Q2,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005244,V005244_01,18-39,F,GeneralMedicine,WalkIn,Morning,40,0,0,7,,2024Q2,Unit_A,minor rash,critical lab alert,0,0,test_labeled
+P005245,V005245_01,40-59,M,Pulmonology,Referral,Evening,38,0,1,5,1.0,2024Q3,Unit_A,shortness of breath,repeated visit this month,0,0,test_labeled
+P005246,V005246_01,75+,M,Cardiology,Referral,Evening,189,0,0,7,1.0,2024Q4,Unit_B,minor rash,critical lab alert,1,1,test_labeled
+P005247,V005247_01,60-74,F,GeneralMedicine,Referral,Evening,21,0,,6,0.5,2024Q3,Unit_A,mild cough,repeated visit this month,1,0,test_labeled
+P005248,V005248_01,40-59,F,Cardiology,Referral,Afternoon,58,1,3,5,1.0,2024Q4,Unit_A,chest pain,repeated visit this month,1,1,test_labeled
+P005249,V005249_01,40-59,F,GeneralMedicine,WalkIn,Evening,13,0,,5,0.5,2024Q3,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005250,V005250_01,75+,F,Neurology,WalkIn,Afternoon,1109,0,0,6,0.5,2024Q3,Unit_B,severe headache,critical lab alert,1,1,test_labeled
+P005251,V005251_01,60-74,M,Pulmonology,WalkIn,Afternoon,94,1,1,5,1.0,2024Q4,Unit_B,mild cough,repeated visit this month,0,0,test_labeled
+P005252,V005252_01,40-59,M,GeneralMedicine,Referral,Afternoon,12,0,,6,0.5,2024Q1,Unit_A,shortness of breath,repeated visit this month,0,0,test_labeled
+P005253,V005253_01,75+,F,Cardiology,WalkIn,Afternoon,68,0,0,7,0.5,2024Q4,Unit_B,chest pain,critical lab alert,1,1,test_labeled
+P005254,V005254_01,75+,F,GeneralMedicine,WalkIn,Evening,317,0,1,6,0.5,2024Q1,Unit_A,repeated fainting,repeated visit this month,0,0,test_labeled
+P005255,V005255_01,75+,F,GeneralMedicine,WalkIn,Night,367,1,1,5,0.5,2024Q2,Unit_B,routine follow up,critical lab alert,0,0,test_labeled
+P005256,V005256_01,18-39,M,GeneralMedicine,WalkIn,Afternoon,42,0,2,5,0.5,2024Q2,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005257,V005257_01,40-59,F,GeneralMedicine,Referral,Evening,20,1,4,7,0.5,2024Q4,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005258,V005258_01,18-39,M,Pulmonology,Referral,Morning,4,0,,5,1.0,2024Q1,Unit_A,mild cough,repeated visit this month,0,0,test_labeled
+P005259,V005259_01,60-74,M,GeneralMedicine,WalkIn,Afternoon,159,1,0,6,,2024Q4,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005260,V005260_01,18-39,F,Neurology,WalkIn,Afternoon,20,,,5,0.5,2024Q4,Unit_A,severe headache,oxygen level dropped,1,1,test_labeled
+P005261,V005261_01,40-59,M,GeneralMedicine,Referral,Evening,146,1,0,7,,2024Q2,Unit_A,shortness of breath,critical lab alert,0,0,test_labeled
+P005262,V005262_01,75+,F,GeneralMedicine,WalkIn,Evening,118,1,1,7,,2024Q1,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005263,V005263_01,40-59,F,Pulmonology,Emergency,Afternoon,81,0,1,6,0.5,2024Q2,Unit_A,mild cough,critical lab alert,0,0,test_labeled
+P005264,V005264_01,40-59,M,GeneralMedicine,WalkIn,Night,34,0,4,5,0.5,2024Q4,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005265,V005265_01,60-74,F,GeneralMedicine,Referral,Night,36,0,1,5,1.0,2024Q3,Unit_B,medication refill,repeated visit this month,1,1,test_labeled
+P005266,V005266_01,40-59,F,GeneralMedicine,Referral,Morning,27,0,2,6,0.5,2024Q2,Unit_A,sleep issue,critical lab alert,0,0,test_labeled
+P005267,V005267_01,40-59,F,Cardiology,Referral,Evening,30,1,1,7,0.5,2024Q1,Unit_A,chest pain,abnormal ECG,1,1,test_labeled
+P005268,V005268_01,75+,M,GeneralMedicine,Referral,Afternoon,14,0,0,5,1.0,2024Q4,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005269,V005269_01,60-74,M,Cardiology,Referral,Evening,20,2,4,6,0.5,2024Q1,Unit_B,shortness of breath,critical lab alert,1,1,test_labeled
+P005270,V005270_01,18-39,F,Neurology,Referral,Evening,22,0,2,7,0.5,2024Q2,Unit_A,repeated fainting,critical lab alert,1,1,test_labeled
+P005271,V005271_01,75+,F,Neurology,WalkIn,Night,996,0,1,6,0.5,2024Q4,Unit_B,severe headache,possible stroke signs,1,1,test_labeled
+P005272,V005272_01,75+,F,Cardiology,WalkIn,Night,1124,0,1,6,0.5,2024Q3,Unit_C,high fever with confusion,repeated visit this month,1,1,test_labeled
+P005273,V005273_01,18-39,F,GeneralMedicine,Referral,Afternoon,15,0,,6,0.5,2024Q1,Unit_A,repeated fainting,critical lab alert,0,0,test_labeled
+P005274,V005274_01,75+,F,GeneralMedicine,WalkIn,Morning,1156,0,,6,1.0,2024Q4,Unit_A,shortness of breath,repeated visit this month,0,0,test_labeled
+P005275,V005275_01,18-39,F,GeneralMedicine,WalkIn,Morning,64,0,0,6,1.0,2024Q2,Unit_A,sleep issue,critical lab alert,1,0,test_labeled
+P005276,V005276_01,75+,F,Cardiology,WalkIn,Night,617,5,4,6,,2024Q1,Unit_B,chest pain,critical lab alert,1,1,test_labeled
+P005277,V005277_01,18-39,M,GeneralMedicine,WalkIn,Afternoon,5,0,,5,1.0,2024Q3,Unit_A,minor rash,repeated visit this month,0,0,test_labeled
+P005278,V005278_01,40-59,M,Cardiology,WalkIn,Evening,103,4,2,5,1.0,2024Q4,Unit_A,chest pain,critical lab alert,1,1,test_labeled
+P005279,V005279_01,75+,F,GeneralMedicine,WalkIn,Afternoon,1603,0,1,5,0.5,2024Q4,Unit_A,repeated fainting,critical lab alert,0,0,test_labeled
+P005280,V005280_01,18-39,F,GeneralMedicine,Referral,Evening,27,1,2,7,0.5,2024Q3,Unit_A,high fever with confusion,critical lab alert,0,0,test_labeled
+P005281,V005281_01,18-39,M,Neurology,WalkIn,Evening,11,0,3,6,0.5,2024Q2,Unit_A,high fever with confusion,critical lab alert,1,1,test_labeled
+P005282,V005282_01,18-39,F,Cardiology,Referral,Evening,50,2,4,7,0.5,2024Q2,Unit_A,severe headache,repeated visit this month,1,1,test_labeled
+P005283,V005283_01,60-74,F,GeneralMedicine,Referral,Afternoon,30,0,8,7,0.5,2024Q4,Unit_A,mild cough,,0,0,test_labeled
+P005284,V005284_01,18-39,M,Cardiology,Emergency,Night,25,0,0,6,0.5,2024Q2,Unit_B,chest pain,oxygen level dropped,1,1,test_labeled
+P005285,V005285_01,60-74,M,Cardiology,Referral,Afternoon,80,1,1,7,,2024Q2,Unit_B,high fever with confusion,possible stroke signs,1,1,test_labeled
+P005286,V005286_01,40-59,F,GeneralMedicine,Referral,Evening,96,0,1,6,1.0,2024Q4,Unit_A,shortness of breath,critical lab alert,0,0,test_labeled
+P005287,V005287_01,18-39,F,GeneralMedicine,Referral,Evening,0,1,2,4,,2024Q3,Unit_A,routine follow up,repeated visit this month,0,0,test_labeled
+P005288,V005288_01,40-59,F,GeneralMedicine,Referral,Evening,27,1,0,5,0.5,2024Q3,Unit_A,shortness of breath,repeated visit this month,1,0,test_labeled
+P005289,V005289_01,40-59,F,GeneralMedicine,Referral,Morning,12,0,,7,0.5,2024Q3,Unit_A,sleep issue,critical lab alert,1,0,test_labeled
+P005290,V005290_01,75+,F,Cardiology,WalkIn,Night,976,4,5,6,0.5,2024Q3,Unit_C,severe headache,oxygen level dropped,1,1,test_labeled
+P005291,V005291_01,40-59,M,GeneralMedicine,Referral,Afternoon,7,0,2,6,0.5,2024Q3,Unit_A,sleep issue,critical lab alert,0,0,test_labeled
+P005292,V005292_01,75+,F,Neurology,WalkIn,Evening,344,0,2,6,0.5,2024Q2,Unit_B,severe headache,critical lab alert,1,1,test_labeled
+P005293,V005293_01,18-39,F,GeneralMedicine,Referral,Night,28,0,3,5,0.5,2024Q3,Unit_A,medication refill,critical lab alert,0,0,test_labeled
+P005294,V005294_01,18-39,M,GeneralMedicine,Referral,Morning,10,0,4,5,1.0,2024Q1,Unit_A,repeated fainting,repeated visit this month,1,0,test_labeled
+P005295,V005295_01,40-59,F,GeneralMedicine,Referral,Evening,59,0,,7,0.5,2024Q1,Unit_A,minor rash,repeated visit this month,0,0,test_labeled
+P005296,V005296_01,18-39,F,Pulmonology,Referral,Afternoon,16,0,3,6,0.5,2024Q3,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005297,V005297_01,18-39,M,Neurology,Emergency,Evening,0,0,1,1,,2024Q1,Unit_A,chest pain,critical lab alert,0,0,test_labeled
+P005298,V005298_01,18-39,F,GeneralMedicine,WalkIn,Morning,70,0,1,6,,2024Q3,Unit_A,repeated fainting,repeated visit this month,0,0,test_labeled
+P005299,V005299_01,75+,M,Cardiology,Referral,Evening,78,1,2,7,0.5,2024Q2,Unit_B,shortness of breath,possible stroke signs,1,1,test_labeled
+P005300,V005300_01,75+,F,GeneralMedicine,WalkIn,Afternoon,702,0,1,6,,2024Q4,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005301,V005301_01,60-74,F,GeneralMedicine,WalkIn,Night,39,0,0,6,,2024Q3,Unit_B,minor rash,critical lab alert,1,1,test_labeled
+P005302,V005302_01,75+,M,Cardiology,WalkIn,Night,308,3,3,7,0.5,2024Q4,Unit_B,chest pain,oxygen level dropped,1,1,test_labeled
+P005303,V005303_01,60-74,M,GeneralMedicine,WalkIn,Evening,131,0,5,6,0.5,2024Q4,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005304,V005304_01,40-59,F,Pulmonology,Referral,Morning,43,0,2,6,1.0,2024Q4,Unit_A,mild cough,critical lab alert,0,0,test_labeled
+P005305,V005305_01,18-39,M,GeneralMedicine,WalkIn,Night,14,1,4,6,0.5,2024Q2,Unit_A,sleep issue,critical lab alert,1,0,test_labeled
+P005306,V005306_01,18-39,M,GeneralMedicine,Referral,Evening,17,1,0,5,0.5,2024Q2,Unit_A,sleep issue,critical lab alert,0,0,test_labeled
+P005307,V005307_01,60-74,F,GeneralMedicine,Referral,Evening,65,1,1,6,0.5,2024Q2,Unit_A,high fever with confusion,critical lab alert,0,0,test_labeled
+P005308,V005308_01,75+,F,GeneralMedicine,Referral,Morning,40,0,0,6,,2024Q1,Unit_A,sleep issue,critical lab alert,0,0,test_labeled
+P005309,V005309_01,60-74,M,Neurology,WalkIn,Morning,27,0,2,7,,2024Q4,Unit_B,severe headache,repeated visit this month,1,1,test_labeled
+P005310,V005310_01,60-74,M,GeneralMedicine,WalkIn,Morning,61,,1,7,0.5,2024Q1,Unit_A,repeated fainting,critical lab alert,0,0,test_labeled
+P005311,V005311_01,40-59,M,GeneralMedicine,Referral,Night,20,0,0,7,0.5,2024Q1,Unit_A,shortness of breath,critical lab alert,0,0,test_labeled
+P005312,V005312_01,18-39,M,GeneralMedicine,Referral,Afternoon,26,0,3,6,0.5,2024Q1,Unit_A,routine follow up,repeated visit this month,0,0,test_labeled
+P005313,V005313_01,18-39,F,GeneralMedicine,WalkIn,Evening,17,0,1,7,0.5,2024Q2,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005314,V005314_01,75+,M,Cardiology,WalkIn,Evening,109,0,5,6,0.5,2024Q1,Unit_B,severe headache,oxygen level dropped,1,1,test_labeled
+P005315,V005315_01,18-39,F,GeneralMedicine,Referral,Morning,29,0,1,5,,2024Q2,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005316,V005316_01,60-74,M,Emergency,Emergency,Morning,40,1,1,6,1.0,2024Q3,Unit_B,medication refill,repeated visit this month,1,1,test_labeled
+P005317,V005317_01,60-74,M,GeneralMedicine,WalkIn,Evening,90,0,4,6,0.5,2024Q4,Unit_A,high fever with confusion,repeated visit this month,0,0,test_labeled
+P005318,V005318_01,18-39,F,Cardiology,WalkIn,Night,716,0,,6,0.5,2024Q4,Unit_B,repeated fainting,abnormal ECG,0,1,test_labeled
+P005319,V005319_01,60-74,M,Cardiology,Referral,Evening,26,0,7,6,,2024Q4,Unit_B,chest pain,critical lab alert,1,1,test_labeled
+P005320,V005320_01,60-74,M,Cardiology,Emergency,Evening,28,0,4,6,0.5,2024Q1,Unit_B,shortness of breath,critical lab alert,1,1,test_labeled
+P005321,V005321_01,60-74,M,Pulmonology,Referral,Morning,81,0,0,5,0.5,2024Q4,Unit_B,sleep issue,critical lab alert,0,0,test_labeled
+P005322,V005322_01,75+,F,GeneralMedicine,Referral,Evening,21,1,3,6,0.5,2024Q2,Unit_A,routine follow up,repeated visit this month,0,0,test_labeled
+P005323,V005323_01,40-59,F,GeneralMedicine,Referral,Morning,41,0,1,6,0.5,2024Q4,Unit_A,sleep issue,critical lab alert,0,0,test_labeled
+P005324,V005324_01,40-59,M,GeneralMedicine,Referral,Afternoon,59,0,1,6,1.0,2024Q1,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005325,V005325_01,75+,M,Cardiology,WalkIn,Evening,71,1,,6,0.5,2024Q3,Unit_B,shortness of breath,abnormal ECG,0,1,test_labeled
+P005326,V005326_01,75+,F,Pulmonology,WalkIn,Night,378,,1,6,0.5,2024Q3,Unit_C,chest pain,critical lab alert,1,1,test_labeled
+P005327,V005327_01,75+,F,Cardiology,WalkIn,Night,1280,0,1,5,0.5,2024Q4,Unit_B,chest pain,abnormal ECG,1,1,test_labeled
+P005328,V005328_01,75+,F,Cardiology,Emergency,Morning,37,0,0,5,0.5,2024Q4,Unit_B,chest pain,critical lab alert,1,1,test_labeled
+P005329,V005329_01,18-39,F,GeneralMedicine,Referral,Afternoon,14,1,3,7,0.5,2024Q3,Unit_A,medication refill,critical lab alert,0,0,test_labeled
+P005330,V005330_01,75+,F,Pulmonology,WalkIn,Evening,1082,1,0,7,0.5,2024Q3,Unit_B,mild cough,repeated visit this month,0,0,test_labeled
+P005331,V005331_01,40-59,F,GeneralMedicine,WalkIn,Morning,53,1,1,6,0.5,2024Q1,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005332,V005332_01,75+,M,GeneralMedicine,Referral,Night,107,1,0,5,1.0,2024Q3,Unit_B,routine follow up,repeated visit this month,1,1,test_labeled
+P005333,V005333_01,40-59,F,GeneralMedicine,Referral,Evening,35,0,1,6,1.0,2024Q3,Unit_A,routine follow up,repeated visit this month,0,0,test_labeled
+P005334,V005334_01,75+,M,Cardiology,WalkIn,Night,179,4,,6,0.5,2024Q4,Unit_C,shortness of breath,oxygen level dropped,1,1,test_labeled
+P005335,V005335_01,18-39,F,GeneralMedicine,Referral,Afternoon,2,0,1,1,0.5,2024Q4,Unit_A,shortness of breath,no acute distress,0,0,test_labeled
+P005336,V005336_01,60-74,F,GeneralMedicine,WalkIn,Night,62,0,,6,1.0,2024Q1,Unit_B,medication refill,repeated visit this month,0,0,test_labeled
+P005337,V005337_01,60-74,M,Cardiology,Referral,Afternoon,60,2,2,5,,2024Q3,Unit_B,chest pain,repeated visit this month,1,1,test_labeled
+P005338,V005338_01,60-74,F,Pulmonology,WalkIn,Night,80,0,,6,,2024Q2,Unit_B,medication refill,critical lab alert,0,0,test_labeled
+P005339,V005339_01,40-59,F,GeneralMedicine,WalkIn,Morning,397,0,0,6,0.5,2024Q3,Unit_A,sleep issue,repeated visit this month,0,0,test_labeled
+P005340,V005340_01,60-74,F,Cardiology,WalkIn,Evening,37,1,3,5,0.5,2024Q4,Unit_B,shortness of breath,oxygen level dropped,1,1,test_labeled
+P005341,V005341_01,40-59,F,GeneralMedicine,Referral,Evening,19,0,0,7,,2024Q4,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005342,V005342_01,75+,M,Cardiology,Referral,Evening,33,0,4,6,,2024Q1,Unit_B,shortness of breath,abnormal ECG,1,1,test_labeled
+P005343,V005343_01,18-39,F,GeneralMedicine,WalkIn,Evening,39,,1,7,1.0,2024Q2,Unit_A,medication refill,repeated visit this month,0,0,test_labeled
+P005344,V005344_01,60-74,F,Cardiology,Referral,Night,61,1,5,7,0.5,2024Q4,Unit_B,chest pain,critical lab alert,1,1,test_labeled
+P005345,V005345_01,60-74,M,Cardiology,Emergency,Morning,70,1,1,5,0.5,2024Q4,Unit_B,chest pain,oxygen level dropped,0,1,test_labeled
+P005346,V005346_01,40-59,M,Cardiology,Referral,Evening,117,5,2,7,0.5,2024Q3,Unit_A,chest pain,critical lab alert,1,1,test_labeled
+P005347,V005347_01,40-59,F,Pulmonology,WalkIn,Afternoon,43,0,0,6,1.0,2024Q1,Unit_A,mild cough,critical lab alert,0,0,test_labeled
+P005348,V005348_01,60-74,M,Neurology,Referral,Night,45,2,1,5,1.0,2024Q2,Unit_B,shortness of breath,possible stroke signs,1,1,test_labeled
+P005349,V005349_01,75+,M,GeneralMedicine,WalkIn,Evening,171,1,,6,0.5,2024Q4,Unit_A,minor rash,critical lab alert,0,0,test_labeled
+P005350,V005350_01,40-59,F,GeneralMedicine,Referral,Night,8,0,1,5,0.5,2024Q4,Unit_A,medication refill,critical lab alert,0,0,test_labeled
+P005351,V005351_01,40-59,F,GeneralMedicine,WalkIn,Evening,14,0,0,6,1.0,2024Q4,Unit_A,shortness of breath,repeated visit this month,0,0,test_labeled
+P005352,V005352_01,75+,F,GeneralMedicine,Referral,Night,1522,0,0,6,0.5,2024Q2,Unit_B,sleep issue,repeated visit this month,0,0,test_labeled
+P005353,V005353_01,75+,M,Pulmonology,Referral,Night,176,0,1,7,1.0,2024Q3,Unit_C,mild cough,critical lab alert,1,1,test_labeled
+P005354,V005354_01,18-39,F,GeneralMedicine,Referral,Morning,1,1,0,3,0.5,2024Q3,Unit_A,routine follow up,,0,0,test_labeled
+P005355,V005355_01,75+,F,GeneralMedicine,WalkIn,Afternoon,1140,0,2,5,,2024Q4,Unit_A,shortness of breath,critical lab alert,0,0,test_labeled
+P005356,V005356_01,75+,F,Neurology,WalkIn,Night,1466,1,0,6,0.5,2024Q1,Unit_B,severe headache,repeated visit this month,1,1,test_labeled
+P005357,V005357_01,75+,F,GeneralMedicine,WalkIn,Morning,1363,0,0,6,0.5,2024Q2,Unit_A,routine follow up,critical lab alert,0,0,test_labeled
+P005358,V005358_01,18-39,M,GeneralMedicine,Referral,Afternoon,24,0,3,5,0.5,2024Q3,Unit_A,repeated fainting,repeated visit this month,0,0,test_labeled
+P005359,V005359_01,40-59,M,Neurology,Referral,Evening,26,2,2,7,,2024Q4,Unit_A,shortness of breath,abnormal ECG,1,1,test_labeled
