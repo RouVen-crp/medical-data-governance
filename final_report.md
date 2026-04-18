@@ -47,7 +47,7 @@
 ## 4. 实验结果对比 (Comparison)
 
 ### 4.1 模型选择分析
-在验证集上，**Majority Vote (MV)** 虽然在覆盖到的样本上精确度高，但弃权率达 34%。我们最终选择 **Weighted Label Model (加权模型)** 进行测试集推理，因为它通过学习权重（Cardio权重1.0, GenMed权重0.9）化解了冲突，并提供了 **92.5%** 的样本覆盖率。
+在验证集上，**Majority Vote (MV)** 虽然在覆盖到的样本上精确度高，但弃权率达 34%。最终选择 **Weighted Label Model (加权模型)** 进行测试集推理，因为它通过学习权重（Cardio权重1.0, GenMed权重0.9）化解了冲突，并提供了 **92.5%** 的样本覆盖率。
 
 ### 4.2 最终测试集表现 (results/evaluation_results.txt)
 - **Accuracy**: 0.8018
@@ -61,7 +61,7 @@
 
 ## 5. 项目结构与交付清单
 
-本项目采用严谨的分层结构（符合方案 A）：
+
 - `scripts/diagnose/`: 数据缺失、偏差、噪音画像脚本。
 - `scripts/experiments/`: LF 迭代、模型对比及最终测试脚本。
 - `results/`: 包含 `predictions.csv` (240条预测) 和 `evaluation_results.txt` (指标日志)。
